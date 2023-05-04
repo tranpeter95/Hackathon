@@ -83,3 +83,9 @@ function countDown(timeSetByUser) {
 countDown(timeSetByUser);
 }
 // })
+
+
+//add styling to timer alert 
+//edit picture 
+//refactor
+//add emoji? 
