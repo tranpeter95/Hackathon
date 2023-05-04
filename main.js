@@ -12,7 +12,7 @@ if (localStorage.getItem(window.location.hostname) === 'true') {
   );
   const will = document.createElement('img');
 
-    will.setAttribute('src','https://i.ibb.co/xgLXqCx/Will.jpg');
+  will.setAttribute('src', 'https://i.ibb.co/xgLXqCx/Will.jpg');
   will.style.height = '100%';
   will.style.width = '100%';
   will.style.zIndex = '50';
@@ -45,7 +45,7 @@ if (localStorage.getItem(window.location.hostname) === 'true') {
   document.body.appendChild(timeOutTimer);
   function timeOutCountDown(timeOut) {
     if (timeOut > 0) {
-        setTimeout(() => {
+      setTimeout(() => {
         timeOutTimer.innerText = 'Time Left: ' + timeOut.toString();
         timeOutCountDown(timeOut - 1);
       }, 1000);
@@ -56,13 +56,11 @@ if (localStorage.getItem(window.location.hostname) === 'true') {
     }
   }
 
-
   timeOutCountDown(timeOut);
 } else {
   const aNumber = Number(
     window.prompt('How long should you be on this website?', '')
   );
-
 
   // realized issues
   // timer will prob reset anytime u click on new link in page
@@ -73,23 +71,23 @@ if (localStorage.getItem(window.location.hostname) === 'true') {
   const timer = document.createElement('div');
   timer.setAttribute('id', 'timer');
 
-timer.style.fontSize = '60px';
+  timer.style.fontSize = '20px';
   timer.style.fontFamily = 'Open Sans';
   timer.style.color = 'black';
   timer.style.position = 'fixed';
-  timer.style.left = '50%';
-  timer.style.top = '50%';
+  timer.style.left = '95%';
+  timer.style.top = '12%';
   timer.style.border = '3px solid black';
   timer.style.backgroundColor = 'white';
   timer.style.borderRadius = '25px';
-  timer.style.padding = '20px';
+  timer.style.padding = '10px';
   timer.style.boxShadow = '12px 12px 2px 1px rgba(0, 0, 255, .2)';
   timer.style.display = 'flex';
   timer.style.alignItems = 'center';
   timer.style.justifyContent = 'center';
 
   let timeSetByUser = aNumber;
-  timer.innerText =  'Time Left: ' + timeSetByUser.toString();
+  timer.innerText = 'Time Left: ' + timeSetByUser.toString();
   document.body.appendChild(timer);
 
   //function to count down the timer
@@ -115,8 +113,3 @@ timer.style.fontSize = '60px';
   }
   countDown(timeSetByUser);
 }
-
-
-
-
-
