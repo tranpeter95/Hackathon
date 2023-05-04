@@ -1,0 +1,19 @@
+Ideas:
+
+- putting an emoji at the end of the page
+- productivity tool that sends you a list of motivation videos
+    - when extension is enabled
+        - a timer is set on various websites
+        - once timer runs out, you will be routed to will’s videos or more motivational videos
+
+
+
+
+
+To do:
+1. make a timer that can count down and show up on webpage
+    -reddit, instagram, twitter
+
+2. make an array of motivational videos 
+3. reroute to random video or display video in browser somehow
+4. make the webpage where the timer ran out inaccessible for a while

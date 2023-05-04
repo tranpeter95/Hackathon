@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Super Cool Extension",
+    "version": "0.1",
+    "description": "Productivity Extension",
+    "content_scripts": [
+        {
+          "matches": ["https://www.google.com/*"],
+          "js": ["./main.js"]
+        }
+      ]
+}
